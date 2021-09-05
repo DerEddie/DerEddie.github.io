@@ -1,76 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Eddie</title>
+  <title>The Vue View</title>
+  <link rel="stylesheet" type="text/css" href="./css/reset.css">
+  <link rel="stylesheet" type="text/css" href="./css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js" defer></script>
+
 </head>
 <body>
-
-
-<h1>Eddie's Blog</h1>
-<h2>Why am I testing? Does it make sense?</h2>
-
-Lorem ipsum dolor sit amet, consectetur adipisicing elit,
- sed do eiusmod tempor incididunt ut labore
- et dolore magna aliqua. Ut enim ad minim veniam,
-  quis nostrud <strong>exercitation ullamco</strong> laboris nisi ut
-   aliquip ex ea commodo consequat. Duis aute irure
-   dolor in reprehenderit in voluptate velit esse
-    cillum dolore eu <em>fugiat nulla pariatur</em>. Excepteu
-    r sint occaecat cupidatat non proident, sunt in
-     culpa qui officia deserunt mollit anim id est
-      laborum.
-
-<form class="" action="index.html" method="post">
-  <input type="number" name="" value="" placeholder="number">
-  <input type="password" name="" value="" placeholder="pwd">
-  <input type="email" name="" value="" placeholder="email">
-  <input type="date" name="" value="">
-  <button type="button" name="button">Submit</button>
-</form>
-
-
-<figure>
-<img src="yoda.jpg" alt="" width="200">
-<figcaption>Baby Joda</figcaption>
-</figure>
-
-
-<figure>
-  <a href="https://youtu.be/Hu83yK6z1O0">
-<img src="pictures/acetylferrocene.jpg" alt="" width="200">
-</a>
-<figcaption>Crystallization Project in Chemistry</figcaption>
-</figure>
-
-
-<a href="game.html">check out this game</a>
-
-<table border="0">
-<thead>
-  <th>Visualisation</th>
-  <th>Name</th>
-  <th>Type</th>
-</thead>
-
-
-<tbody>
-  <tr>
-    <th><img src="pictures/moon.png" alt="" width="200"></th>
-    <th>Moon</th>
-    <th>3</th>
-  </tr>
-
-  <tr>
-    <th><img src="pictures/dog.png" alt="" width="200"></th>
-    <th>Dog</th>
-    <th>3</th>
-  </tr>
-</tbody>
-</table>
-
-
+  <div id="app">
+    <h1>THE VUE VIEW</h1>
+    <div class="user">
+      <div class="user-information">
+        <div class="image-container">
+          <img src="https://content.codecademy.com/courses/what-is-vue/profile.jpeg" alt="profile picture">
+        </div>
+        <h3>CoderInTraining</h3>
+      </div>
+      <div class="user-bio">
+        <em>Bio: </em> Excited future software engineer.
+      </div>
+    </div>
+    <div class="tweets">
+      <div class="tweet">
+        <h3>CoderInTraining</h3>
+        <p>Started learning to code today. Wish me luck!</p>
+      </div>
+      <div class="tweet">
+        <h3>CoderInTraining</h3>
+        <p>Okay, I learned HTML, CSS, and JavaScript. But, how do I combine them together?? Send help.</p>
+      </div>
+      <div class="tweet">
+        <h3>CoderInTraining</h3>
+        <p>Today I start learning Vue. I got this.</p>
+      </div>
+    </div>
+    <div class="settings">
+      <h2>Settings</h2>
+      <label for="username">Username</label>
+      <input type="text" value="username" placeholder="Username" />
+      <label for="bio">Bio</label>
+      <textarea value="bio" placeholder="Bio"></textarea>
+      <label for="tweet">New Tweet</label>
+      <div class="new-tweet">
+        <input type="text" value="tweet" placeholder="New Tweet" />
+        <button>Add Tweet</button>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
